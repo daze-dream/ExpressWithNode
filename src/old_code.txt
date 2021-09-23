@@ -1,0 +1,16 @@
+Sample of old event handlers
+
+app.get('/help', (req, res) => {
+    //res.send('Even though yer a little strange, we help anyone we can, stranger.')
+    res.send( {
+        greeting: 'Even though yer a little strange, we help anyone we can, stranger.',
+        gifts: [{
+            item: 'Sturdy Flask',
+            description: 'A flask that seems rough hewn and dusty, but just holding it tells you that it will be a steadfast companion.'
+
+        }, {
+            item: 'Gunpowder',
+            description: 'Black powder with many versatile uses, beyond being a catalyst for harm.'
+        }]
+    })
+})
