@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
+const { response } = require('express')
 //------------------------------------------------------------------------
 const app = express()
 //------------------------------------------------------------------------
@@ -45,6 +46,20 @@ app.get('/weather', (req, res) => {
 
 app.get('/town_square', (req, res) => {
     res.send('Don\' look like you from \'round these parts. \n Your parts don\' look like they from \'round these parts.')
+})
+
+app.get('/help/*', (req, res) => {
+    res.render('error', {
+        title:'404: Help page not found',
+        body: 'Came to the wrong place if you needed help, stranger. The dunes got nothin\' for nobody. '
+    })
+})
+
+app.get('*', (req, res) => {
+    res.render('error', {
+        title: '404: Page doesn\'t exist',
+        body: 'Yer in the sand dunes, stranger.'
+    })
 })
 
 app.listen(3000, () => {
