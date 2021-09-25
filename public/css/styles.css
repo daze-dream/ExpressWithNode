@@ -1,7 +1,42 @@
 h1 {
-    color: teal;
+    font-size: 64px;
+    color: navy;
+    margin-bottom: 12px;
 }
 
-img{
-    width: 220px;
+.charview{
+    width: 350px;
+}
+
+body {
+    color: #333333;
+    font-family: Arial;
+    max-width: 850px;S
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+footer {
+    color: #888888;
+    margin-top: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #eeeeee;
+}
+
+header {
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+header a {
+    color:navajowhite;
+    margin-right: 12px;
+    text-decoration: none;
 }
