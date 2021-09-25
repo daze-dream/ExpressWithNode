@@ -12,6 +12,7 @@
     "@types/express": "^4.17.13",
     "@types/hbs": "^4.0.1",
     "express": "^4.17.1",
-    "hbs": "^4.1.2"
+    "hbs": "^4.1.2",
+    "postman-request": "^2.88.1-postman.30"
   }
 }
