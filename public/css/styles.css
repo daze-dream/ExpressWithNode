@@ -40,3 +40,26 @@ header a {
     margin-right: 12px;
     text-decoration: none;
 }
+
+#tidbit {
+    font-weight: bold;
+}
+
+#output {
+    font-style: italic;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background-color: #888888;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
