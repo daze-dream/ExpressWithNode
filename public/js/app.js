@@ -16,10 +16,11 @@ weatherForm.addEventListener('submit', (e) => {
         
     const location = search.value;
     const url = 'http://localhost:3000/weather?address=' + location;
-    console.log('YOU DARE DISTURB THE WEATHERMANCER? ')
+    const herokuURL = '/weather?address=' + location;
+    console.log('YOU DARE DISTURB THE WEATHERMANCER? ');
     console.log(url)
     output.textContent = 'the fog is still swirling'
-    fetch(url).then((response) => {
+    fetch(herokuURL).then((response) => {
     response.json().then((data) => {
         if(data.errorCode)
         {
